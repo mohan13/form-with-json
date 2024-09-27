@@ -18,14 +18,20 @@ const Login = () => {
   return (
     <>
       {loginSchema && <Form schema={loginSchema} onSubmit={handleLogin} />}
+
       {loginData && (
-        <>
+        <div className="mt-4 flex flex-col justify-start items-start gap-4">
           <h3 className="text-2xl mb-4 text-green-500">
             Form Submitted Successfully!
           </h3>
-          <div>Email: {loginData.email}</div>
-          <div>Email: {loginData.password}</div>
-        </>
+
+          <p>
+            <strong>Email:</strong> {loginData.email}
+          </p>
+          <p>
+            <strong>Password:</strong> {loginData.password}
+          </p>
+        </div>
       )}
     </>
   );

@@ -23,25 +23,11 @@ const JobForm = () => {
     setJob(data);
   };
 
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file && file.type === "application/pdf") {
-      setUploadedFileName(file.name); // Set the PDF file name
-    } else {
-      alert("Please upload a valid PDF file.");
-      setUploadedFileName(null); // Reset the file name if not valid
-    }
-  };
-
   //   console.log("job", jobSchema && jobSchema.);
   return (
     <>
       {jobSchema ? (
-        <Form
-          schema={jobSchema}
-          onChange={handleFileChange}
-          onSubmit={onSubmit}
-        />
+        <Form schema={jobSchema} onSubmit={onSubmit} />
       ) : (
         <p>Loading form...</p>
       )}

@@ -41,12 +41,6 @@
       "label": "Portfolio Website",
       "name": "portfolio",
       "placeholder": "Enter your portfolio website"
-    },
-    {
-      "id": 7,
-      "type": "file",
-      "label": "Resume",
-      "name": "resume"
     }
   ]
 }

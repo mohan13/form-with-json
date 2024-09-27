@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Form } from "../../components/reusable/form";
 
 const ContactPage = () => {
-  const [contact, setContact] = useState([]);
+  const [contact, setContact] = useState(null);
   const [contactSchema, setContactSchema] = useState(null);
   const handleContact = (data) => {
     console.log(data);
@@ -21,17 +21,25 @@ const ContactPage = () => {
         <Form schema={contactSchema} onSubmit={handleContact} />
       )}
 
-      {Object.values(contact).map((item, index) => (
-        <div
-          key={index}
-          className=" flex flex-col gap-2 justify-start items-start "
-        >
+      {contact && (
+        <div className="mt-4 flex flex-col justify-start items-start gap-4">
           <h3 className="text-2xl mb-4 text-green-500">
             Form Submitted Successfully!
           </h3>
-          {item}
+          <p>
+            <strong>Full Name:</strong> {contact.fullName}
+          </p>
+          <p>
+            <strong>Email:</strong> {contact.email}
+          </p>
+          <p>
+            <strong>Phone Number:</strong> {contact.phone}
+          </p>
+          <p>
+            <strong>Cover Letter:</strong> {contact.coverLetter}
+          </p>
         </div>
-      ))}
+      )}
     </>
   );
 };
