@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "type": "email",
+      "label": "Email",
+      "name": "email",
+      "placeholder": "Enter your email"
+    },
+    {
+      "id": 2,
+      "type": "password",
+      "label": "Password",
+      "name": "password",
+      "placeholder": "******"
+    }
+  ]
+}

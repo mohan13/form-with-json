@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "name": "name",
+      "type": "text",
+      "label": "Enter you name",
+      "placeholder": "Fullname"
+    },
+    {
+      "id": 2,
+      "name": "email",
+      "type": "email",
+      "label": "email you name",
+      "placeholder": "username@email.com"
+    },
+    {
+      "id": 3,
+      "name": "phone",
+      "type": "number",
+      "label": "Enter you phone number",
+      "placeholder": ""
+    },
+    {
+      "id": 4,
+      "name": "message",
+      "type": "textarea",
+      "label": "Write your message",
+      "placeholder": ""
+    }
+  ]
+}
