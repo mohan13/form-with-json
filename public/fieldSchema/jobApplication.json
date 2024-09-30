@@ -37,10 +37,35 @@
     },
     {
       "id": 6,
+      "type": "select",
+      "label": "Gender",
+      "name": "gender",
+
+      "placeholder": "Enter your LinkedIn profile URL",
+      "options": ["male", "female"]
+    },
+    {
+      "id": 6,
+      "type": "select",
+      "label": "Programming Language",
+      "name": "programming",
+      "multiple": true,
+      "placeholder": "Enter you Programming Language",
+      "options": ["React", "Nodejs", "Nextjs"]
+    },
+    {
+      "id": 7,
       "type": "text",
       "label": "Portfolio Website",
       "name": "portfolio",
       "placeholder": "Enter your portfolio website"
+    },
+    {
+      "id": 8,
+      "type": "file",
+      "label": "Resume",
+      "name": "resume",
+      "placeholder": ""
     }
   ]
 }

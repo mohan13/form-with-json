@@ -23,7 +23,7 @@ const JobForm = () => {
     setJob(data);
   };
 
-  //   console.log("job", jobSchema && jobSchema.);
+  console.log("job", uploadedFileName);
   return (
     <>
       {jobSchema ? (
@@ -47,6 +47,12 @@ const JobForm = () => {
           </p>
           <p>
             <strong>Cover Letter:</strong> {job.coverLetter}
+          </p>{" "}
+          <p>
+            <strong>Gender:</strong> {job.gender}
+          </p>{" "}
+          <p>
+            <strong>Language:</strong> {job.programming}
           </p>
           {uploadedFileName && (
             <div>

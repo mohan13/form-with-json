@@ -27,7 +27,7 @@ const ContactPage = () => {
             Form Submitted Successfully!
           </h3>
           <p>
-            <strong>Full Name:</strong> {contact.fullName}
+            <strong>Full Name:</strong> {contact.name}
           </p>
           <p>
             <strong>Email:</strong> {contact.email}
@@ -36,7 +36,7 @@ const ContactPage = () => {
             <strong>Phone Number:</strong> {contact.phone}
           </p>
           <p>
-            <strong>Cover Letter:</strong> {contact.coverLetter}
+            <strong>Cover Letter:</strong> {contact.message}
           </p>
         </div>
       )}
